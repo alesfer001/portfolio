@@ -1,0 +1,182 @@
+/* Navigation Bar */
+
+.header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.01));
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  float: middle;
+  display: block;
+  color: #00AFF0;
+  text-align: center;
+  padding: 7%;
+  text-decoration: none;
+  font-size: 19px;
+  height: 70px;
+}
+
+.nav:hover {
+  background: linear-gradient(
+      rgba(0, 175, 240, 0.8),
+      rgba(0, 0, 0, 0.01));
+  color: black;
+  text-decoration: none;
+}
+
+.logolink {
+  float: middle;
+  display: block;
+  margin-right: 20%;
+  margin-left: 20%;
+  height: 70px;
+  padding: 3%;
+  outline: 0;
+}
+
+#logo {
+  width: 47px;
+  height: 52px;
+}
+
+.nav:focus {
+  text-decoration: none;
+  color: #00AFF0;
+  outline: 0;
+}
+
+/* Parallax */
+
+.parallax {
+
+  height: 700px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Home Section */
+
+.img1 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../img/programer.jpg");
+}
+
+blockquote {
+  text-shadow: 3px 3px black;
+  border: none;
+  text-align: center;
+  font-size: 55px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 17%;
+  line-height: 1.45;
+  color: white;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 80px;
+  margin-right: auto;
+  margin-left: -4%;
+  margin-top: -3%;
+  color: white;
+}
+
+blockquote cite {
+color: white;
+font-size: 20px;
+display: block;
+margin-top: 5px;
+}
+
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+/* About Me Section */
+
+#about-me {
+  color: #777;
+  background: linear-gradient(to bottom left,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.6));
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+#profile-pic {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+}
+
+#name {
+  text-align: center;
+  font-size: 36px;
+  color: #00AFF0;
+}
+
+.icons {
+  color: #00aeef;
+}
+
+#skills{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+#skills td {
+  padding: 15px;
+}
+
+#skills-h {
+  font-size: 32px;
+  text-align: center;
+  color: #00aeef;
+}
+
+#aboutme-par {
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+/* Work Section */
+
+.img2 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+      url("../img/programer2.png");
+}
+
+/* Contact Section */
+
+#contact {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 1));
+  height: 200px;
+}
