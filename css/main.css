@@ -471,3 +471,30 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #0080bd;
 }
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 80%;
+    border-color: rgb(120, 120, 120);
+}
+
+#reach {
+  padding-top: 2%;
+  text-align: center;
+  font-size: 24px;
+}
+
+#reach p {
+  text-shadow: 1px 1px black;
+  color: rgb(120, 120, 120);
+}
+
+.reach-icons {
+  padding: 2%;
+}
