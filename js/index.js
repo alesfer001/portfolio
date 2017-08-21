@@ -17,4 +17,34 @@ $(document).ready(function(){
       }, 800);
     } // End if
   });
+
+  $(".nav").focus(function(event){
+    $(this).addClass("highlighted");
+  })
+
+  $(window).scroll(function(){
+    var height = $(window).scrollTop();
+
+    if(height < 690){
+      $("#aboutme-link").removeClass("highlighted");
+      $("#work-link").removeClass("highlighted");
+      $("#contact-link").removeClass("highlighted");
+    }
+    else if (height >= 690 && height < 1690) {
+      $("#aboutme-link").addClass("highlighted");
+      $("#work-link").removeClass("highlighted");
+      $("#contact-link").removeClass("highlighted");
+    }
+    else if (height >= 1690 && height < 3200) {
+      $("#aboutme-link").removeClass("highlighted");
+      $("#work-link").addClass("highlighted");
+      $("#contact-link").removeClass("highlighted");
+    }
+    else {
+      $("#aboutme-link").removeClass("highlighted");
+      $("#work-link").removeClass("highlighted");
+      $("#contact-link").addClass("highlighted");
+    }
+
+ });
 });

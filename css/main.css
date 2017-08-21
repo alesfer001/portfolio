@@ -21,6 +21,10 @@
   font-size: 20px;
 }
 
+.highlighted {
+  color: white !important;
+}
+
 @media only screen and (max-width: 768px) {
 	.nav {
 		font-size: 14px;
@@ -32,6 +36,12 @@
   border-radius: 5px;
   color: black;
   text-decoration: none;
+}
+
+.nav:focus {
+  text-decoration: none;
+  color: #00AFF0;
+  outline: 0;
 }
 
 .logolink {
@@ -53,12 +63,6 @@
 		width: 27px;
     height: 30px;
 	}
-}
-
-.nav:focus {
-  text-decoration: none;
-  color: #00AFF0;
-  outline: 0;
 }
 
 /* Parallax */
@@ -127,10 +131,10 @@ blockquote:before {
 }
 
 blockquote cite {
-color: white;
-font-size: 20px;
-display: block;
-margin-top: 5px;
+  color: white;
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -490,6 +494,12 @@ hr {
   font-size: 24px;
 }
 
+@media only screen and (max-width: 768px) {
+  #reach {
+    font-size: 16px;
+  }
+}
+
 #reach p {
   text-shadow: 1px 1px black;
   color: rgb(120, 120, 120);
@@ -497,4 +507,20 @@ hr {
 
 .reach-icons {
   padding: 2%;
+}
+
+#reach a:link {
+  text-decoration: none;
+  color: #00AFF0;
+  outline: 0;
+}
+
+#reach a:focus, #reach a:visited {
+  text-decoration: none;
+  color: #00AFF0;
+  outline: 0;
+}
+
+body {
+  position: relative;
 }
