@@ -265,6 +265,7 @@ content: "\2014 \2009";
 }
 
 .card {
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   color: #00AFF0;
@@ -329,6 +330,25 @@ content: "\2014 \2009";
   text-decoration: none;
   color: #00AFF0;
   outline: 0;
+}
+
+.caption {
+  visibility: hidden;
+}
+
+.caption p {
+  font-size: 16px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .caption h2 {
+    font-size: 16px;
+  }
+
+  .caption p {
+    font-size: 12px;
+  }
 }
 
 .mini-icons {

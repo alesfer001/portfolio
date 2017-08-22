@@ -45,6 +45,17 @@ $(document).ready(function(){
       $("#work-link").removeClass("highlighted");
       $("#contact-link").addClass("highlighted");
     }
+  });
 
- });
+  $(".project").hover(function(event){
+    $(".caption", this).css("visibility","visible");
+    $(".caption", this).animate({marginTop: '+=1%'}, 500);
+    $(".card-img", this).animate({marginTop: '-=20%'}, 500);
+    $(".tech", this).animate({marginTop: '-=20%'}, 500);
+  }, function(event){
+    $(".caption", this).css("visibility","hidden");
+    $(".caption", this).animate({marginTop: '-=1%'}, 500);
+    $(".card-img", this).animate({marginTop: '+=20%'}, 500);
+    $(".tech", this).animate({marginTop: '+=20%'}, 500);
+  });
 });
