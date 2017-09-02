@@ -308,6 +308,7 @@ content: "\2014 \2009";
 
 .card-img img {
   margin: auto;
+  border-radius: 15px;
 }
 
 .card:hover {
@@ -391,13 +392,13 @@ content: "\2014 \2009";
   }
 }
 
-#agena-tech i {
+#agena-tech i, #rm-quotemachine-tech i {
   padding-right : 8px;
   padding-left : 8px;
 }
 
 @media only screen and (max-width: 768px) {
-  #agena-tech i {
+  #agena-tech i, #rm-quotemachine-tech i {
     padding-right: 3px;
     padding-left: 3px;
   }
