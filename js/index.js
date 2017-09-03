@@ -47,15 +47,30 @@ $(document).ready(function(){
     }
   });
 
+  var time = 0;
   $(".project").hover(function(event){
-    $(".caption", this).css("visibility","visible");
-    $(".caption", this).animate({marginTop: '+=1%'}, 500);
-    $(".card-img", this).animate({marginTop: '-=20%'}, 500);
-    $(".tech", this).animate({marginTop: '-=20%'}, 500);
+    var obj = $(this);
+    time = setTimeout(function() {
+      showCard(obj);
+    }, 300);
   }, function(event){
-    $(".caption", this).css("visibility","hidden");
-    $(".caption", this).animate({marginTop: '-=1%'}, 500);
-    $(".card-img", this).animate({marginTop: '+=20%'}, 500);
-    $(".tech", this).animate({marginTop: '+=20%'}, 500);
+    clearTimeout(time);
+    if($(".caption", this).css("visibility") == "visible"){
+      hideCard($(this));
+    }
   });
+
+  function showCard(obj){
+    $(".caption", obj).css("visibility","visible");
+    $(".caption", obj).animate({marginTop: '+=1%'}, 500);
+    $(".card-img", obj).animate({marginTop: '-=20%'}, 500);
+    $(".tech", obj).animate({marginTop: '-=20%'}, 500);
+  }
+
+  function hideCard(obj){
+    $(".caption", obj).css("visibility","hidden");
+    $(".caption", obj).animate({marginTop: '-=1%'}, 500);
+    $(".card-img", obj).animate({marginTop: '+=20%'}, 500);
+    $(".tech", obj).animate({marginTop: '+=20%'}, 500);
+  }
 });
