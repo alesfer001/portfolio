@@ -7,9 +7,14 @@ $(document).ready(function(){
       // Prevent default anchor click behavior
       event.preventDefault();
 
+      $('.navlink').each(function (){
+        $(this).removeClass('highlighted');
+      });
       // Store hash
       var hash = this.hash;
-
+      if($(this).hasClass('navlink')){
+        $(this).addClass('highlighted');
+      }
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -23,28 +28,39 @@ $(document).ready(function(){
   })
 
   $(window).scroll(function(){
-    var height = $(window).scrollTop();
+    var scrollPos = $(document).scrollTop()+50;
+    $('.navlink').each(function (){
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('a').removeClass("highlighted");
+          currLink.addClass("highlighted");
+      }
+      else{
+          currLink.removeClass("highlighted");
+      }
+    });
 
-    if(height < 690){
+    if(0){
       $("#aboutme-link").removeClass("highlighted");
       $("#work-link").removeClass("highlighted");
       $("#contact-link").removeClass("highlighted");
     }
-    else if (height >= 690 && height < 1690) {
+    else if (0) {
       $("#aboutme-link").addClass("highlighted");
       $("#work-link").removeClass("highlighted");
       $("#contact-link").removeClass("highlighted");
     }
-    else if (height >= 1690 && height < 3200) {
+    else if (0) {
       $("#aboutme-link").removeClass("highlighted");
       $("#work-link").addClass("highlighted");
       $("#contact-link").removeClass("highlighted");
     }
-    else {
+    /*else {
       $("#aboutme-link").removeClass("highlighted");
       $("#work-link").removeClass("highlighted");
       $("#contact-link").addClass("highlighted");
-    }
+    }*/
   });
 
   var time = 0;

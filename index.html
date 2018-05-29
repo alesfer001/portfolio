@@ -17,21 +17,12 @@
 
     <!-- Navigation Bar -->
     <div class="header">
-        <div class="row">
-            <div class="col-xs-3">
-                <a class="logolink" href="#home"><img id="logo" src="img/logo.png" alt="Minified Logo"></a>
-            </div>
-            <div class="col-xs-3">
-                <a class="nav" id="aboutme-link" href="#about-me">About Me</a>
-            </div>
-            <div class="col-xs-3">
-                <a class="nav" id="work-link" href="#work">Work</a>
-            </div>
-            <div class="col-xs-3">
-                <a class="nav" id="contact-link" href="#contact">Contact</a>
-            </div>
-        </div>
-        <!-- row -->
+      <ul class="navi-bar">
+        <li><a class="logolink" href="#home"><img id="logo" src="img/logo.png" alt="Minified Logo"></a></li>
+        <li><a class="navlink" id="aboutme-link" href="#about-me">About Me</a></li>
+        <li><a class="navlink" id="work-link" href="#work">Work</a></li>
+        <li><a class="navlink" id="contact-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
     <!-- header -->
 
@@ -68,98 +59,94 @@
 
     <!-- Work -->
     <div id="work" class="parallax img2">
-        <div class="container">
-            <table id="projects">
-                <tr>
-                    <th colspan=2>Projects</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="agena-tribute" class="card project">
-                            <a href="https://github.com/alesfer001/Agena-Tribute" target=_blank>
-                              <div class="card-img">
-                                  <img class="img-responsive" src="img/agena-tribute.jpg" alt="Agena Tribute Page">
-                              </div>
-                              <div class="tech" id="agena-tech">
-                                  <i class="devicon-html5-plain-wordmark mini-icons"></i>
-                                  <i class="devicon-css3-plain-wordmark mini-icons"></i>
-                                  <i class="devicon-bootstrap-plain-wordmark mini-icons"></i>
-                                  <i class="devicon-jquery-plain-wordmark mini-icons"></i>
-                              </div>
-                              <div class="caption">
-                                <h2>Agena Tribute</h2>
-                                <hr>
-                                <p>Responsive web page implementing a carousel and accordion using bootsrap.</p>
-                              </div>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div id="rm-quote-machine" class="card project">
-                          <a href="https://github.com/alesfer001/R-M-Quote-Machine" target=_blank>
-                            <div class="card-img">
-                                <img class="img-responsive" src="img/rm-quotemachine.png" alt="Rick and Morty Quote Machine">
-                            </div>
-                            <div class="tech" id="rm-quotemachine-tech">
-                                <i class="devicon-html5-plain-wordmark mini-icons"></i>
-                                <i class="devicon-css3-plain-wordmark mini-icons"></i>
-                                <i class="devicon-bootstrap-plain-wordmark mini-icons"></i>
-                                <i class="devicon-jquery-plain-wordmark mini-icons"></i>
-                            </div>
-                            <div class="caption">
-                              <h2>Rick and Morty Quote Machine</h2>
-                              <hr>
-                              <p>Random quote machine of the show Rick and Morty, implementing JSON files and Twitter integration</p>
-                            </div>
-                          </a>
-                        </div>
-                    </td>
-                </tr>
-                <!--
-        <tr>
-          <td>
-            <div id="project3" class="card">
-              <a>
-                <div class="card-img">
-                </div>
-                <h2>Upcoming</h2>
-              </a>
+        <div id="projects" class="container">
+          <div class="row">
+            <div class="col-xs-12 p-header">Projects</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 p-work">
+              <div id="agena-tribute" class="card project">
+                  <a href="https://github.com/alesfer001/Agena-Tribute" target=_blank>
+                    <div class="card-img agena-img">
+                        <img class="img-responsive" src="img/agena-tribute.jpg" alt="Agena Tribute Page">
+                    </div>
+                    <div class="tech" id="agena-tech">
+                        <i class="devicon-html5-plain-wordmark mini-icons"></i>
+                        <i class="devicon-css3-plain-wordmark mini-icons"></i>
+                        <i class="devicon-bootstrap-plain-wordmark mini-icons"></i>
+                        <i class="devicon-jquery-plain-wordmark mini-icons"></i>
+                    </div>
+                    <div class="caption">
+                      <h2>Agena Tribute</h2>
+                      <hr>
+                      <p>Responsive web page implementing a carousel and accordion using bootsrap.</p>
+                    </div>
+                  </a>
+              </div>
             </div>
-          </td>
-          <td>
-            <div id="project4" class="card">
-              <a>
-                <div class="card-img">
-                </div>
-                <h2>Upcoming</h2>
-              </a>
+            <div class="col-md-4 p-work">
+              <div id="rm-quote-machine" class="card project">
+                <a href="https://github.com/alesfer001/R-M-Quote-Machine" target=_blank>
+                  <div class="card-img">
+                      <img class="img-responsive" src="img/rm-quotemachine.png" alt="Rick and Morty Quote Machine">
+                  </div>
+                  <div class="tech" id="rm-quotemachine-tech">
+                      <i class="devicon-html5-plain-wordmark mini-icons"></i>
+                      <i class="devicon-css3-plain-wordmark mini-icons"></i>
+                      <i class="devicon-bootstrap-plain-wordmark mini-icons"></i>
+                      <i class="devicon-jquery-plain-wordmark mini-icons"></i>
+                  </div>
+                  <div class="caption">
+                    <h2>Rick and Morty Quote Machine</h2>
+                    <hr>
+                    <p>Random quote machine of the show Rick and Morty, implementing JSON files and Twitter integration</p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </td>
-        </tr>
-        <tr>
-        -->
-                <th colspan=2>Contributions</th>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <div id="codebuddies" class="card">
-                            <a href="https://github.com/codebuddiesdotorg/codebuddies" target=_blank>
-                                <div class="card-img">
-                                    <img class="img-responsive" src="img/codebuddies.png" alt="CodeBuddies">
-                                </div>
-                                <h2>CodeBuddies</h2>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div class="col-md-4 p-work">
+              <div id="local-weather-app" class="card project">
+                <a href="https://github.com/alesfer001/Local-Weather-App" target=_blank>
+                  <div class="card-img">
+                      <img class="img-responsive" src="img/localweatherapp.png" alt="Local Weather App">
+                  </div>
+                  <div class="tech" id="local-weather-app-tech">
+                      <i class="devicon-html5-plain-wordmark mini-icons"></i>
+                      <i class="devicon-css3-plain-wordmark mini-icons"></i>
+                      <i class="devicon-bootstrap-plain-wordmark mini-icons"></i>
+                      <i class="devicon-jquery-plain-wordmark mini-icons"></i>
+                  </div>
+                  <div class="caption">
+                    <h2>Weather App</h2>
+                    <hr>
+                    <p>App showing local weather (includes search for other cities)</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 p-header">Contributions</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 p-work">
+              <div id="codebuddies" class="card">
+                  <a href="https://github.com/codebuddiesdotorg/codebuddies" target=_blank>
+                      <div class="card-img">
+                          <img class="img-responsive" src="img/codebuddies.png" alt="CodeBuddies">
+                      </div>
+                      <h2>CodeBuddies</h2>
+                  </a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Container -->
     </div>
 
     <!-- Contact -->
     <div id="contact">
-        <div class="container-fluid">
+        <div class="container-fluid" id="contact-container">
             <h1>Contact Me</h1>
             <form action="mailto:lesferayoub@gmail.com" method="post" enctype="text/plain">
                 <div class="container-fluid">

@@ -1,35 +1,65 @@
 /* Navigation Bar */
 
-.header {
+.navi-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   background: linear-gradient(
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0.01));
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
 }
 
-.nav {
-  float: middle;
+.navi-bar li {
+  float: left;
+  width: 25%;
+}
+
+.navi-bar li a {
   display: block;
   color: #00AFF0;
   text-align: center;
-  margin-top: 4%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding: 24px 16px;
   text-decoration: none;
   font-size: 20px;
+  height: 70px;
+  outline: 0;
+}
+
+.logolink {
+  padding: 16px 16px !important;
+}
+
+@media only screen and (max-width: 520px) {
+  .navi-bar li a {
+    padding: 12px 6px;
+    font-size: 15px;
+    height: 45px;
+  }
+  .logolink {
+    padding: 8px 8px !important;
+  }
+}
+
+li a:hover:not(.active) {
+  background: rgba(0,0,0,0);
+  color: white !important;
+  border-bottom: 2px solid #00AFF0;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
 }
 
 .highlighted {
   color: white !important;
   border-bottom: 2px solid #00AFF0;
-}
-
-@media only screen and (max-width: 768px) {
-	.nav {
-		font-size: 14px;
-	}
+  text-decoration: none;
 }
 
 .nav:hover {
@@ -44,23 +74,14 @@
   outline: 0;
 }
 
-.logolink {
-  float: middle;
-  display: block;
-  margin-right: 20%;
-  margin-left: 20%;
-  padding: 3%;
-  outline: 0;
-}
-
 #logo {
-  width: 47px;
-  height: 52px;
+  width: 40px;
+  height: 45px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	#logo {
-		width: 27px;
+		width: 26px;
     height: 30px;
 	}
 }
@@ -76,6 +97,10 @@
 
 /* Home Section */
 
+#home {
+  width: 100%;
+}
+
 .img1 {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
@@ -85,11 +110,7 @@
   height: 700px;
 }
 
-@media only screen and (max-width: 768px) {
-	.img1 {
-    height: 400px;
-	}
-}
+
 
 blockquote {
   text-shadow: 3px 3px black;
@@ -106,12 +127,12 @@ blockquote {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	blockquote {
     text-shadow: 1px 1px black;
 		font-size: 30px;
     width: 80%;
-    padding-top: 120px;
+    padding-top: 50%;
 	}
 }
 
@@ -124,9 +145,9 @@ blockquote:before {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	blockquote:before {
-		font-size: 50px;
+		font-size: 40px;
 	}
 }
 
@@ -137,9 +158,9 @@ blockquote cite {
   margin-top: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	blockquote cite {
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 
@@ -157,6 +178,7 @@ content: "\2014 \2009";
   text-align:center;
   padding:50px 80px;
   text-align: justify;
+  width: 100%;
 }
 
 #profile-pic {
@@ -168,7 +190,7 @@ content: "\2014 \2009";
   padding: 2%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	#profile-pic {
 		height: 100px;
     width: 100px;
@@ -181,10 +203,10 @@ content: "\2014 \2009";
   font-size: 52px;
   color: #00AFF0;
   text-shadow: 2px 2px black;
-  margin-bottom: 3%;
+  padding-bottom: 3%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	#name {
 		font-size: 32px;
     text-shadow: 1px 1px black;
@@ -201,11 +223,11 @@ content: "\2014 \2009";
   font-family: Roboto, sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	#aboutme-par {
     font-size: 16px;
     width: 130%;
-    margin-left: -15%;
+    margin-left: -14%;
 	}
 }
 
@@ -214,7 +236,7 @@ content: "\2014 \2009";
   font-size: 76px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
 	.icons {
     font-size: 36px;
 	}
@@ -230,13 +252,13 @@ content: "\2014 \2009";
   padding-bottom: 3%;
 }
 
-@media only screen and (max-width: 768px) {
-  #skills {
-    margin-left: -18%;
+@media only screen and (max-width: 520px) {
+  #skills{
+    border: none;
+    outline: 0;
   }
 	#skills td {
-    padding-right: 20%;
-    padding-botom: 15%;
+    padding-bottom: 15%;
 	}
 }
 
@@ -249,13 +271,19 @@ content: "\2014 \2009";
   font-family: Roboto, sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
   #skills-h {
     font-size: 24px;
   }
 }
 
 /* Work Section */
+
+#work {
+  margin-top: -30px;
+  padding: 0;
+  width: 100%;
+}
 
 .img2 {
   background-image: linear-gradient(
@@ -269,7 +297,7 @@ content: "\2014 \2009";
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   color: #00AFF0;
-  width: 370px;
+  width: 320px;
   height: 530px;
   text-align: center;
   font-size: 30px;
@@ -283,7 +311,7 @@ content: "\2014 \2009";
   font-family: Roboto, sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
   .card {
     width: 170px;
     height: 254px;
@@ -292,23 +320,33 @@ content: "\2014 \2009";
 }
 
 .card-img {
-  width: 350px;
+  width: 300px;
   height: 400px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .card-img {
-    width: 70px;
-    height: 160px;
-  }
-}
-
 .card-img img {
   margin: auto;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 520px) {
+  .card-img {
+    width: 140px;
+    height: 220px;
+  }
+
+  .agena-img{
+    width: 100px;
+  }
+
+  .card-img img {
+    margin: auto;
+    border-radius: 6px;
+    padding-bottom: -100px;
+  }
 }
 
 .card:hover {
@@ -342,7 +380,7 @@ content: "\2014 \2009";
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
   .caption h2 {
     font-size: 16px;
   }
@@ -356,19 +394,19 @@ content: "\2014 \2009";
   font-size: 48px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
   .mini-icons {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
 #projects {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-#projects td, #projects th {
+.p-header, .p-work {
   padding: 3%;
   color: #00AFF0;
   text-shadow: 3px 3px black;
@@ -376,35 +414,37 @@ content: "\2014 \2009";
   font-family: Roboto, sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
-  #projects td, #projects th {
+@media only screen and (max-width: 520px) {
+  .p-header, .p-work {
     text-shadow: 1px 1px black;
   }
 }
 
-#projects th {
+.p-header {
   font-size: 48px;
 }
 
-@media only screen and (max-width: 768px) {
-  #projects th {
+@media only screen and (max-width: 520px) {
+  .p-header {
     font-size: 28px;
   }
 }
 
-#agena-tech i, #rm-quotemachine-tech i {
+.tech i {
   padding-right : 8px;
   padding-left : 8px;
 }
 
 @media only screen and (max-width: 768px) {
-  #agena-tech i, #rm-quotemachine-tech i {
+  .tech i {
     padding-right: 3px;
     padding-left: 3px;
   }
 
   .card h2 {
     font-size: 18px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -415,6 +455,8 @@ content: "\2014 \2009";
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 1));
   font-family: Roboto, sans-serif;
+  width: 100%;
+  height: 800px;
 }
 
 #contact h1 {
@@ -431,7 +473,13 @@ content: "\2014 \2009";
   margin-bottom: 4%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
+  #contact {
+    height: 700px;
+  }
+  #contact-container {
+    padding-top: 30%;
+  }
   #contact h1 {
     font-size: 22px;
     padding: 3%;
@@ -443,7 +491,7 @@ form {
   margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
   form {
     width: 100%;
   }
@@ -487,7 +535,7 @@ input[type="submit"] {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
   input[type="submit"] {
     font-size: 14px;
   }
@@ -515,7 +563,7 @@ hr {
   font-size: 24px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 520px) {
   #reach {
     font-size: 16px;
   }
@@ -542,6 +590,6 @@ hr {
   outline: 0;
 }
 
-body {
-  position: relative;
+html {
+  width: 100%;
 }
