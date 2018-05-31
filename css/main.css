@@ -9,7 +9,7 @@
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0.01));
   position: fixed;
-  top: 0;
+  top: -80px;
   z-index: 2;
   width: 100%;
 }
@@ -32,6 +32,7 @@
 
 .logolink {
   padding: 16px 16px !important;
+  border: none !important;
 }
 
 @media only screen and (max-width: 520px) {
@@ -125,6 +126,9 @@ blockquote {
   padding-top: 17%;
   line-height: 1.45;
   color: white;
+  position: absolute;
+  left: 20%;
+  top: 25px;
 }
 
 @media only screen and (max-width: 520px) {
@@ -456,7 +460,6 @@ content: "\2014 \2009";
       rgba(0, 0, 0, 1));
   font-family: Roboto, sans-serif;
   width: 100%;
-  height: 800px;
 }
 
 #contact h1 {
@@ -474,9 +477,6 @@ content: "\2014 \2009";
 }
 
 @media only screen and (max-width: 520px) {
-  #contact {
-    height: 700px;
-  }
   #contact-container {
     padding-top: 30%;
   }
