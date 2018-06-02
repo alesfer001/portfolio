@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Ayoub Lesfer</title>
@@ -36,12 +43,12 @@
 
     <!-- About Me -->
     <div id="about-me">
-        <img id="profile-pic" class="img-responsive img-circle" src="img/profile-pic.png">
-        <h2 id="name">Ayoub Lesfer</h2>
-        <p id="aboutme-par">My name is Ayoub. I'm an aspiring web developer, interested in various projects and "things", but more importantly in learning more and more each day. I enjoy the scope of creativity given by programing languages and I am highly motivated to design "things" to the best of my ability.
+        <img id="profile-pic" class="img-responsive img-circle hideme" src="img/profile-pic.png">
+        <h2 id="name" class="hideme">Ayoub Lesfer</h2>
+        <p id="aboutme-par" class="hideme2">My name is Ayoub. I'm an aspiring web developer, interested in various projects and "things", but more importantly in learning more and more each day. I enjoy the scope of creativity given by programing languages and I am highly motivated to design "things" to the best of my ability.
         </p>
-        <h3 id="skills-h">Skills</h3>
-        <table id="skills" class="table-responsive">
+        <h3 id="skills-h" class="hideme">Skills</h3>
+        <table id="skills" class="table-responsive hideme2">
             <tr>
                 <td><i class="devicon-html5-plain-wordmark icons"></i></td>
                 <td><i class="devicon-css3-plain-wordmark icons"></i></td>
@@ -60,13 +67,13 @@
     <!-- Work -->
     <div id="work" class="parallax img2">
         <div id="projects" class="container">
-          <div class="row">
+          <div class="row hideme">
             <div class="col-xs-12 p-header">Projects</div>
           </div>
-          <div class="row">
+          <div class="row hideme2">
             <div class="col-md-4 p-work">
               <div id="agena-tribute" class="card project">
-                  <a href="https://github.com/alesfer001/Agena-Tribute" target=_blank>
+                  <a href="agena.html" target=_blank>
                     <div class="card-img agena-img">
                         <img class="img-responsive" src="img/agena-tribute.jpg" alt="Agena Tribute Page">
                     </div>
@@ -86,7 +93,7 @@
             </div>
             <div class="col-md-4 p-work">
               <div id="rm-quote-machine" class="card project">
-                <a href="https://github.com/alesfer001/R-M-Quote-Machine" target=_blank>
+                <a href="RM.html" target=_blank>
                   <div class="card-img">
                       <img class="img-responsive" src="img/rm-quotemachine.png" alt="Rick and Morty Quote Machine">
                   </div>
@@ -106,7 +113,7 @@
             </div>
             <div class="col-md-4 p-work">
               <div id="local-weather-app" class="card project">
-                <a href="https://github.com/alesfer001/Local-Weather-App" target=_blank>
+                <a href="lwapp.html" target=_blank>
                   <div class="card-img">
                       <img class="img-responsive" src="img/localweatherapp.png" alt="Local Weather App">
                   </div>
@@ -125,12 +132,12 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-12 p-header">Contributions</div>
+          <div class="row hideme">
+            <div class="col-xs-12 c-header">Contributions</div>
           </div>
-          <div class="row">
-            <div class="col-xs-12 p-work">
-              <div id="codebuddies" class="card">
+          <div class="row hideme2">
+            <div class="col-xs-12 c-work">
+              <div id="codebuddies" class="card contribution">
                   <a href="https://github.com/codebuddiesdotorg/codebuddies" target=_blank>
                       <div class="card-img">
                           <img class="img-responsive" src="img/codebuddies.png" alt="CodeBuddies">
@@ -147,8 +154,8 @@
     <!-- Contact -->
     <div id="contact">
         <div class="container-fluid" id="contact-container">
-            <h1>Contact Me</h1>
-            <form action="contact.php" method="post">
+            <h1 class="hideme">Contact Me</h1>
+            <form class="hideme2" action="contact.php" method="post">
                 <div class="container-fluid">
                     <input type="text" name="name" placeholder="Your Name" required="required" />
                     <input type="email" name="email" placeholder="Email Address" required="required" />

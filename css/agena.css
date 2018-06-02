@@ -1,0 +1,226 @@
+/* Carousel */
+
+.carousel-font {
+	font-family: 'Oxygen', sans-serif;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 26px;
+	padding: 10px;
+}
+
+.carousel-caption {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0%;
+	left: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+	.carousel-font {
+		font-size: 16px;
+	}
+}
+
+.carousel-indicators>li {
+	background-color: black;
+}
+
+.agena {
+	height: 397px !important;
+}
+
+.agenaw {
+	width: 70%;
+}
+
+.carousel-inner {
+	height: 400px;
+	margin: 0.5%;
+}
+
+@media only screen and (max-width: 768px) {
+	.agena {
+		height: 297px !important;
+	}
+
+	.carousel-inner {
+		height: 297px;
+	}
+
+	#myCarousel {
+		height: 326px !important;
+	}
+}
+
+[id~=agena] {
+	width : auto;
+}
+
+#myCarousel {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: black;
+	border-radius: 30px;
+	padding: 10px;
+	height: 426px;
+}
+
+.carousel-control {
+	border-radius: 30px;
+}
+
+/* Accordion */
+
+.panel-group .panel {
+	border-radius: 10px;
+  box-shadow: none;
+  border-color: #EEEEEE;
+	background-color: #FAFAFA;
+}
+
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: #212121;
+  background-color: #FAFAFA;
+  border-color: #EEEEEE;
+}
+
+.panel-title {
+  font-size: 20px;
+	background-color: #c7a4ff;
+	color: black;
+	border-radius: 10px;
+	margin: 0.5%;
+}
+
+@media only screen and (max-width: 768px) {
+	.panel-title {
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.more-less {
+  float: right;
+  color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+}
+
+#accordion {
+	font-family: 'Dosis', sans-serif;
+}
+
+.panel-body {
+	background-color: #FAFAFA;
+}
+
+
+.panel-body>p,li {
+	font-size: 20px;
+	line-height: 1.4em;
+}
+
+@media only screen and (max-width: 768px) {
+	.panel-body>p,li {
+		font-size: 16px;
+	}
+}
+
+/* Page Headers */
+
+#intro {
+	background-color: #232B2B;/*GRAY*/
+	font-family: 'Dosis', sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	padding: 10px;
+	border-radius: 10px;
+	border: thick inset #9575cd;
+	box-shadow: 0 0 15px #777777;
+}
+
+#profile-pic {
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+    #profile-pic {
+        width: 50%;
+    }
+}
+
+.border-circle {
+	border: thick ridge #9575cd;
+	border-radius: 50%;
+}
+
+#intro-head {
+	background-color: #9575cd;
+	color: white;
+	margin: auto;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	padding-bottom: 6px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 36px;
+	text-shadow: 2px 2px 7px #111111;
+}
+
+@media only screen and (max-width: 768px) {
+	#intro-head {
+		font-size: 20px;
+	}
+}
+
+#intro-sect {
+	background-color: #9575cd;
+	color: white;
+	margin: auto;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	padding: 6px;
+	border-radius: 5px;
+	font-style: italic;
+	text-align: center;
+	font-size: 26px;
+	text-shadow: 2px 2px 7px #111111;
+}
+
+@media only screen and (max-width: 768px) {
+	#intro-sect {
+		font-size: 16px;
+	}
+}
+
+/* Containers */
+
+.jumbotron {
+	margin-top: 5%;
+	background-color: white;
+	border: thick inset #9575cd;
+}
+
+body {
+	padding-bottom: 250px;
+	background-color: #232B2B;/*GRAY*/
+}
+
+/* Other */
+
+a:hover {
+	text-decoration: none;
+}

@@ -1,0 +1,94 @@
+h1 {
+  font-size: 54px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  padding: 2%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background: radial-gradient(circle,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0));
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 24px;
+    text-shadow: 1px 1px black;
+	}
+  h2 {
+    font-size: 16px;
+  }
+}
+
+.weather {
+  width: 70%;
+  margin: auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.7));
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+	.weather {
+    width: 90%;
+    height: auto;
+    position: relative;
+    top: 80px;
+  }
+}
+
+.fade-div {
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 1px 1px grey;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+	.fade-div {
+    font-size: 16px;
+  }
+}
+
+.animated {
+  top: -30px;
+}
+
+td {
+  padding: 5%;
+}
+
+.wi {
+  font-size: 70px;
+  padding: 2%;
+}
+
+input {
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 0.5%;
+}
+
+@media only screen and (max-width: 768px) {
+	input {
+    font-size: 16px;
+    padding: 1%;
+    margin: 1%;
+  }
+}
+
+.fahrenheit {
+  display: inline-block;
+}
+.celsius {
+  display: inline-block;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}

@@ -410,7 +410,7 @@ content: "\2014 \2009";
   padding-bottom: 30px;
 }
 
-.p-header, .p-work {
+.p-header, .p-work, .c-header, .c-work {
   padding: 3%;
   color: #00AFF0;
   text-shadow: 3px 3px black;
@@ -419,17 +419,17 @@ content: "\2014 \2009";
 }
 
 @media only screen and (max-width: 520px) {
-  .p-header, .p-work {
+  .p-header, .p-work, .c-header, .c-work {
     text-shadow: 1px 1px black;
   }
 }
 
-.p-header {
+.p-header, .c-header {
   font-size: 48px;
 }
 
 @media only screen and (max-width: 520px) {
-  .p-header {
+  .p-header, .c-header {
     font-size: 28px;
   }
 }

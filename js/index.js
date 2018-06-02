@@ -33,6 +33,8 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     var scrollPos = $(document).scrollTop()+50;
+
+    // Highlight navigation link of current section
     $('.navlink').each(function (){
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
@@ -45,26 +47,22 @@ $(document).ready(function(){
       }
     });
 
-    if(0){
-      $("#aboutme-link").removeClass("highlighted");
-      $("#work-link").removeClass("highlighted");
-      $("#contact-link").removeClass("highlighted");
-    }
-    else if (0) {
-      $("#aboutme-link").addClass("highlighted");
-      $("#work-link").removeClass("highlighted");
-      $("#contact-link").removeClass("highlighted");
-    }
-    else if (0) {
-      $("#aboutme-link").removeClass("highlighted");
-      $("#work-link").addClass("highlighted");
-      $("#contact-link").removeClass("highlighted");
-    }
-    /*else {
-      $("#aboutme-link").removeClass("highlighted");
-      $("#work-link").removeClass("highlighted");
-      $("#contact-link").addClass("highlighted");
-    }*/
+    $(".hideme").each(function(i){
+      $(this).css("opacity","0");
+      if($(this).next().hasClass("hideme2")){
+        $(this).next().css("opacity","0");
+      }
+
+      var bottom_of_object = $(this).position().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if( bottom_of_window > bottom_of_object ){
+        $(this).animate({'opacity':'1'},1500);
+        if($(this).next().hasClass("hideme2")){
+          $(this).next().animate({'opacity':'1'},2500);
+        }
+      }
+    });
   });
 
   var time = 0;

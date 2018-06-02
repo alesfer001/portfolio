@@ -1,0 +1,154 @@
+.logo img {
+  display: block;
+  margin: auto;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+	.logo img {
+		width: 70%;
+	}
+}
+
+#Rick {
+  position: absolute;
+  left: -450px;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 768px) {
+	#Rick {
+    left: -35%;
+    top: 20%;
+		width: 90%;
+	}
+}
+
+#Morty {
+  position: absolute;
+  left: 850px;
+  top: 50px;
+  z-index: -1;
+  opacity: 0.9;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+@media only screen and (max-width: 768px) {
+	#Morty {
+    left: 45%;
+    top: 10%;
+		width: 90%;
+	}
+}
+
+.mycontainer{
+  width: 70%;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 4%;
+}
+
+#quote-container {
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  height: 250px;
+  font-size: 32px;
+  background: radial-gradient(circle,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0));
+  border: 4px solid rgba(0, 176, 200, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+	#quote-container {
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+		border: 2px solid rgba(0, 176, 200, 0.5);
+	}
+}
+
+.quote {
+  padding: 1%;
+}
+
+.quote-author {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+	.quote-author {
+    font-size: 12px;
+	}
+}
+
+.quote-author:before {
+content: "\2014 \2009";
+}
+
+#quote-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+#newquote-btn {
+  font-size: 18px;
+  outline: none;
+  box-sizing: border-box;
+  width: 50%;
+  display: block;
+  background: #008097;
+  margin-top: -0.5%;
+  color: white;
+  border-radius: 5px;
+  border-bottom: 2px solid #5fe2fb;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+	#newquote-btn {
+    font-size: 12px;
+    margin-top: 7%;
+    border-bottom: 1px solid #5fe2fb;
+	}
+}
+
+#newquote-btn:hover {
+  background: #00b0c8;
+}
+
+.quote-tweet {
+  visibility: hidden;
+  text-align: center;
+}
+
+.twitter-share-button img {
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+	.twitter-share-button img {
+    height: 20px;
+	}
+}
+
+body {
+  background-image: url("../img/RM/nebula.jpg");
+  overflow: hidden;
+}
