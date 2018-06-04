@@ -11,12 +11,12 @@ $(document).ready(function(){
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
     $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=c5f24736063fac2f3ce3833b59d92ab3", function(data){
-      getTime(data);
+      getTimeZone(data);
     });
   });
 
   // Get time of current chosen city
-  function getTime(data) {
+  function getTimeZone(data) {
     var loc = data.coord.lat + ", " + data.coord.lon;
     var d = new Date();
     var timestamp = d.getTime()/1000 + d.getTimezoneOffset() * 60;
@@ -294,7 +294,7 @@ $(document).ready(function(){
     $("#city").keypress(function(e){
       if(e.keyCode == 13){
         $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + $("#city").val() + "&APPID=c5f24736063fac2f3ce3833b59d92ab3", function(data){
-          getTime(data);
+          getTimeZone(data);
         })
       }
     });
