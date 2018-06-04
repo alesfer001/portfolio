@@ -20,7 +20,7 @@ $(document).ready(function(){
     var loc = data.coord.lat + ", " + data.coord.lon;
     var d = new Date();
     var timestamp = d.getTime()/1000 + d.getTimezoneOffset() * 60;
-    var apikey = 'AIzaSyCMdNL_5IOaIdGxWNbTFEi-Az9VquKLNsc';
+    var apikey = 'AIzaSyBng4Lm9iwjL-0Giku0LKn6DicQ9LMp10Y';
     $.getJSON("https://maps.googleapis.com/maps/api/timezone/json?location=" + loc + "&timestamp=" + timestamp + "&key=" + apikey, d = function(ret){
       if (ret.status == 'OK'){
         var offsets = ret.dstOffset * 1000 + ret.rawOffset * 1000;
