@@ -111,7 +111,15 @@ li a:hover:not(.active) {
   height: 700px;
 }
 
-
+.redirect {
+  text-shadow: 1px 1px black;
+  font-size: 18px;
+  font-family: Georgia, serif;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 80%;
+}
 
 blockquote {
   text-shadow: 3px 3px black;

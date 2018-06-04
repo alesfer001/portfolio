@@ -2,6 +2,8 @@ $(document).ready(function(){
   $('blockquote').css("opacity","0");
   $("blockquote").animate({ opacity: 1, top: "0px" }, 2000);
   $(".navi-bar").animate({top: "0px"}, 2000);
+  $('.redirect').css("opacity","0");
+  $(".redirect").animate({ opacity: 1 }, 2000);
 
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {

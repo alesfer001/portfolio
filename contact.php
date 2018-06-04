@@ -72,6 +72,16 @@ if($_POST){
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+  $("#home").append("<p class='redirect'></p>");
+  var timer=5;
+  setInterval(function(){
+    $(".redirect").html("You will be redirected in " + timer-- + " seconds.");
+  }, 1000)
+  setTimeout(function(){
+    window.location.replace("index.html");
+  },5000);
+  </script>
 </body>
 
 </html>
